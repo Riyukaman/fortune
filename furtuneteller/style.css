@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+.container {
+    height: 450px;
+    width: 55%;
+    border: 1px solid #343a40;
+    margin: 70px auto;
+    border-radius: 30px;
+}
+
+.container .header {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container .header h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.container .header h2 {
+    color: white;
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+.container .header span {
+    align-self: center;
+}
+
+.container .input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: none;
+  }
+  
+
+.container .input #fortune {
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    align-self: center;
+    transition: transform.5s;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.container .input #submit {
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.container .input #fortune:hover {
+    transform: scale(1.1);
+}
+
+.container .input #submit:hover {
+    background-image: linear-gradient( 270.3deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100% );
+}
+
+.container .answer #answer {
+    margin-left: 10px;
+    margin-top:30px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+.container .answer #answer {
+    /* margin-left: 10px; */
+}
